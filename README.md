@@ -15,9 +15,9 @@ Red teaming without scope is just abuse with extra steps.
 
 ## Attack research
 
-- [llm-attacks](https://github.com/ldp7d/llm-attacks) — GCG adversarial-suffix attacks on aligned models (Zou et al., "Universal and Transferable Adversarial Attacks on Aligned Language Models"). Ships AdvBench, still the standard harmful-behavior dataset for this line of work.
+- [llm-attacks](https://github.com/llm-attacks/llm-attacks) — GCG adversarial-suffix attacks on aligned models (Zou et al., "Universal and Transferable Adversarial Attacks on Aligned Language Models"). Ships AdvBench, still the standard harmful-behavior dataset for this line of work.
 - [HarmBench](https://github.com/centerforaisafety/HarmBench) — standardized harmful-behavior benchmark plus a fine-tuned classifier for automated attack-rating, so you stop eyeballing judge outputs.
-- [JailbreakBench](https://github.com/jailbench/jailbreakbench) — open artifact of jailbreak prompts with per-model results; useful as a regression set to check whether a provider's moderation changed under you.
+- [JailbreakBench](https://github.com/JailbreakBench/JailbreakBench) — open artifact of jailbreak prompts with per-model results; useful as a regression set to check whether a provider's moderation changed under you.
 
 ## Frameworks and scanners
 
@@ -29,7 +29,7 @@ Red teaming without scope is just abuse with extra steps.
 
 ## Agent-pipeline security
 
-- [agentdojo](https://github.com/eth-sri/agentdojo) — benchmark environment for attacks on LLM agents (tool use, injection through indirect content) with a programmable suite of tools and attacks.
+- [agentdojo](https://github.com/ethz-spylab/agentdojo) — ETH SRI benchmark environment for attacks on LLM agents (tool use, injection through indirect content) with a programmable suite of tools and attacks.
 
 ## Models worth testing against
 
@@ -38,7 +38,7 @@ Abliterated/uncensored checkpoints — run these only within systems you are aut
 - [failspy/llama-3-8b-Instruct-abliterated](https://huggingface.co/failspy/llama-3-8b-Instruct-abliterated) — early reference implementation of Llama-3 abliteration following the Arditi et al. refusal-direction method.
 - [huihui-ai abliterated series](https://huggingface.co/huihui-ai) — consistently maintained abliterated variants of current open-weight releases (Qwen, Mistral, Gemma, and others); practical default when a harness needs a low-refusal model today.
 - [mlabonne/NeuralDaredevil-8B-abliterated](https://huggingface.co/mlabonne/NeuralDaredevil-8B-abliterated) — ablated DPO fine-tune with a write-up of the full pipeline; good for understanding what abliteration costs in tool-calling fidelity.
-- [cognitivecomputations/dolphin-mixtral](https://huggingface.co/cognitivecomputations/dolphin-mixtral) — the long-running dolphin line of uncensored fine-tunes; historically significant and still a common baseline.
+- [ehartford/dolphin-2.2-mistral-7b](https://huggingface.co/ehartford/dolphin-2.2-mistral-7b) — from the long-running dolphin line of uncensored fine-tunes; historically significant and still a common baseline.
 
 ## Endpoints and routing
 
@@ -47,7 +47,7 @@ Abliterated/uncensored checkpoints — run these only within systems you are aut
 
 ## References and datasets
 
-- [AdvBench](https://github.com/ldp7d/llm-attacks/blob/main/data/advbench/harmful_behaviors.csv) — 520 harmful-behavior strings; the default universal-attack substrate shipped with llm-attacks.
+- [AdvBench](https://github.com/llm-attacks/llm-attacks/blob/main/data/advbench/harmful_behaviors.csv) — 520 harmful-behavior strings; the default universal-attack substrate shipped with llm-attacks.
 - [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) — the taxonomy most client security reviews expect findings mapped to.
 - [MITRE ATLAS](https://atlas.mitre.org/) — adversary tactics and techniques for ML systems; the right vocabulary when a red team report has to be read by non-LLM security staff.
 
