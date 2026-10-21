@@ -21,7 +21,7 @@ Red teaming without scope is just abuse with extra steps.
 
 ## Frameworks and scanners
 
-- [PyRIT](https://github.com/Azure/PyRIT) — Microsoft's Python Risk Identification Toolkit; orchestrates multi-turn attack conversations between an attacker LLM and a target, with memory and scoring.
+- [PyRIT](https://github.com/microsoft/PyRIT) — Microsoft's Python Risk Identification Toolkit; orchestrates multi-turn attack conversations between an attacker LLM and a target, with memory and scoring.
 - [garak](https://github.com/NVIDIA/garak) — LLM vulnerability scanner with a large probe library (prompt injection, data leakage, hallucination, denial of service); closest thing to nmap for model endpoints.
 - [promptfoo](https://github.com/promptfoo/promptfoo) — config-driven eval framework whose red-team modes cover injection, PII leakage, and policy-violation probes; good for keeping tests in YAML next to prompts.
 - [giskard](https://github.com/Giskard-AI/giskard) — scanner that generates test cases from your own prompts/datasets; strong on injection and fragile-output detection for RAG pipelines.
